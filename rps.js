@@ -51,8 +51,10 @@ function playRound(humanChoice,compChoice) {
     else if(humanChoice === compChoice){
         return 'Round Draw';
     }
-    else
-        return 'Invalid input';
+    else{
+        console.log('Invalid input, try again');
+        return (playRound(getHumanChoice(),getCompChoice()));
+    }
 }
 
 
