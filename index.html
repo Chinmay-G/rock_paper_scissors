@@ -1,12 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="rps.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.cdnfonts.com/css/molisa-delawere" rel="stylesheet">
 </head>
+
 <body>
-    
+    <h1>ROCK PAPER SCISSORS?!?</h1>
+    <button class="newGame">NEW GAME</button>
+    <section class="display">
+        <div class="interface player">
+            <h2 class="you">You</h2>
+            <img src="rock.png" alt="" class="playerImg">
+            <h2 class="move playerMove">Move</h2>
+            <p class="playerScore">Score: 0</p>
+        </div>
+        <div class="interface computer">
+            <h2 class="comp">Computer</h2>
+            <img src="rock.png" alt="" class="compImg">
+            <h2 class="move compMove">Move</h2>
+            <p class="compScore">Score: 0</p>
+        </div>
+    </section>
+
+    <section class="gameState">Game</section>
+    <section class="btns">
+        <button class="btn btnRock">ROCK</button>
+        <button class="btn btnPaper">PAPER</button>
+        <button class="btn btnScissors">SCISSORS</button>
+    </section>
+
+    <script src="rps.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.cdnfonts.com/css/molisa-delawere');
+
+*, html {
+    box-sizing: inherit;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Molisa Delawere', sans-serif;
+}
+
+body {
+    /* border-left: solid white 25vw; */
+    /* border-right: solid white 25vw; */
+    /* border-bottom: solid rgb(38, 38, 38) 1vw; */
+    margin: 0;
+}
+
+h1 {
+    padding: 35px;
+    color: white;
+    background-color: black;
+}
+
+.newGame {
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    background-color: lightgray;
+    margin: 30px auto 35px auto;
+}
+
+.newGame:hover {
+    background-color: rgb(154, 154, 154);
+}
+
+.newGame:active {
+    transform: translateY(4px);
+    /* scale: 1.2; */
+}
+
+.display {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.interface {
+    width: 450px;
+    height: 350px;
+    /* padding: 0 50px; */
+}
+
+.interface h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.highlight {
+    color: white;
+    background-color: black;
+}
+
+.interface .move {
+    font-size: 20px;
+}
+
+img {
+    width: 210px;
+}
+
+.player {
+    border-right: solid grey 5px;
+}
+
+.btns {
+    width: 50vw;
+    bottom: 20px;
+    margin: 30px auto 16px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    border: none;
+    width: 120px;
+    height: 45px;
+    z-index: 5;
+    background-color: rgb(255, 208, 150);
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: rgb(255, 175, 77);
+}
+
+.btn:active {
+    transform: translateY(4px);
+    /* scale: 1.2; */
+}
+
+.gameState {
+    color: white;
+    background-color: black;
+    padding: 5px 0;
+    margin: 35px 20vw 0 20vw;
+    border-radius: 3px;
+    text-align: center;
+    /* font-size: 28px; */
+}
+
+.winner {
+    margin: 35px 0 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+      scale: 0.9;
+    }
+    
+    /* html {
+        margin: -10vh 0;
+    }
+
+    body {
+        margin: -30px 0;
+    } */
+
+    h1 {
+        width: 80%;
+        margin: auto 0;
+        background-color: black;
+    }
+
+    .interface {
+        margin: 0;
+        width: 50vw;
+        height: 350px;
+        padding: 0;
+    }
+  }
